@@ -1,9 +1,9 @@
 ---
-title: Example Project
-summary: An example of using the in-built project page.
+title: Внешний курс
+summary: Отчет по прохождению курса по кибербезопасности.
 tags:
   - Deep Learning
-date: '2016-04-27T00:00:00Z'
+date: '2024-05-18T00:00:00Z'
 
 # Optional external URL for project (replaces project detail page).
 external_link: ''
@@ -30,12 +30,263 @@ url_video: ''
 slides: example
 ---
 
-Lorem ipsum dolor sit amet, consectetur adipiscing elit. Duis posuere tellus ac convallis placerat. Proin tincidunt magna sed ex sollicitudin condimentum. Sed ac faucibus dolor, scelerisque sollicitudin nisi. Cras purus urna, suscipit quis sapien eu, pulvinar tempor diam. Quisque risus orci, mollis id ante sit amet, gravida egestas nisl. Sed ac tempus magna. Proin in dui enim. Donec condimentum, sem id dapibus fringilla, tellus enim condimentum arcu, nec volutpat est felis vel metus. Vestibulum sit amet erat at nulla eleifend gravida.
+# Цель работы
 
-Nullam vel molestie justo. Curabitur vitae efficitur leo. In hac habitasse platea dictumst. Sed pulvinar mauris dui, eget varius purus congue ac. Nulla euismod, lorem vel elementum dapibus, nunc justo porta mi, sed tempus est est vel tellus. Nam et enim eleifend, laoreet sem sit amet, elementum sem. Morbi ut leo congue, maximus velit ut, finibus arcu. In et libero cursus, rutrum risus non, molestie leo. Nullam congue quam et volutpat malesuada. Sed risus tortor, pulvinar et dictum nec, sodales non mi. Phasellus lacinia commodo laoreet. Nam mollis, erat in feugiat consectetur, purus eros egestas tellus, in auctor urna odio at nibh. Mauris imperdiet nisi ac magna convallis, at rhoncus ligula cursus.
+Цель работы - выполнить контрольные задания курса "Основы Кибербезопасности"
 
-Cras aliquam rhoncus ipsum, in hendrerit nunc mattis vitae. Duis vitae efficitur metus, ac tempus leo. Cras nec fringilla lacus. Quisque sit amet risus at ipsum pharetra commodo. Sed aliquam mauris at consequat eleifend. Praesent porta, augue sed viverra bibendum, neque ante euismod ante, in vehicula justo lorem ac eros. Suspendisse augue libero, venenatis eget tincidunt ut, malesuada at lorem. Donec vitae bibendum arcu. Aenean maximus nulla non pretium iaculis. Quisque imperdiet, nulla in pulvinar aliquet, velit quam ultrices quam, sit amet fringilla leo sem vel nunc. Mauris in lacinia lacus.
+# Выполнение заданий 
 
-Suspendisse a tincidunt lacus. Curabitur at urna sagittis, dictum ante sit amet, euismod magna. Sed rutrum massa id tortor commodo, vitae elementum turpis tempus. Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean purus turpis, venenatis a ullamcorper nec, tincidunt et massa. Integer posuere quam rutrum arcu vehicula imperdiet. Mauris ullamcorper quam vitae purus congue, quis euismod magna eleifend. Vestibulum semper vel augue eget tincidunt. Fusce eget justo sodales, dapibus odio eu, ultrices lorem. Duis condimentum lorem id eros commodo, in facilisis mauris scelerisque. Morbi sed auctor leo. Nullam volutpat a lacus quis pharetra. Nulla congue rutrum magna a ornare.
+## Как работает интернет: базовые сетевые протоколы
 
-Aliquam in turpis accumsan, malesuada nibh ut, hendrerit justo. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Quisque sed erat nec justo posuere suscipit. Donec ut efficitur arcu, in malesuada neque. Nunc dignissim nisl massa, id vulputate nunc pretium nec. Quisque eget urna in risus suscipit ultricies. Pellentesque odio odio, tincidunt in eleifend sed, posuere a diam. Nam gravida nisl convallis semper elementum. Morbi vitae felis faucibus, vulputate orci placerat, aliquet nisi. Aliquam erat volutpat. Maecenas sagittis pulvinar purus, sed porta quam laoreet at.
+HTTPS - протокол прикладного уровня (рис. [-@fig:001]).
+
+![Вопрос 2.1.1](image/1.png){#fig:001 width=70%}
+
+TCP - transmission control protocol - работает на транспортном уровне (рис. [-@fig:002]).
+
+![Вопрос 2.1.2](image/2.png){#fig:002 width=70%}
+
+В адресе типа IPv4 не может быть чисел больше 255 (рис. [-@fig:003]).
+
+![Вопрос 2.1.3](image/3.png){#fig:003 width=70%}
+
+DNS-сервер (рис. [-@fig:004]).
+
+![Вопрос 2.1.4](image/4.png){#fig:004 width=70%}
+
+Распределение протоколов в модели TCP/IP:
+
+- Прикладной уровень (Application Layer): HTTP, RTSP, FTP, DNS.
+
+- Транспортный уровень (Transport Layer): TCP, UDP, SCTP, DCCP.
+
+- Сетевой (Межсетевой) уровень (Network Layer): IP.
+
+- Уровень сетевого доступа (Канальный) (Link Layer): Ethernet, IEEE 802.11, WLAN, SLIP, Token Ring, ATM и MPLS.
+(рис. [-@fig:005]).
+
+![Вопрос 2.1.5](image/5.png){#fig:005 width=70%}
+
+Протокол http передает не зашифрованные данные, в отличие от https (рис. [-@fig:006]).
+
+![Вопрос 2.1.6](image/6.png){#fig:006 width=70%}
+
+https передает зашифрованные данные, одна из фаз - передача данных, другая должна быть рукопожатием (рис. [-@fig:007]).
+
+![Вопрос 2.1.7](image/7.png){#fig:007 width=70%}
+
+TLS определяется и клиентом, и сервером (рис. [-@fig:008]).
+
+![Вопрос 2.1.8](image/8.png){#fig:008 width=70%}
+
+Тут все понятно по скриншоту (рис. [-@fig:009]).
+
+![Вопрос 2.1.9](image/9.png){#fig:009 width=70%}
+
+## Персонализация сети
+
+Куки хранят id ceccии и идентификатор (рис. [-@fig:010]).
+
+![Вопрос 2.2.1](image/10.png){#fig:010 width=70%}
+
+Куки не делают соединение более надежным (рис. [-@fig:011]).
+
+![Вопрос 2.2.2](image/11.png){#fig:011 width=70%}
+
+Здесь все понятно (рис. [-@fig:012]).
+
+![Вопрос 2.2.3](image/12.png){#fig:012 width=70%}
+
+Сессионные куки хранятся лишь в течение сессии (рис. [-@fig:013]).
+
+![Вопрос 2.2.4](image/13.png){#fig:013 width=70%}
+
+## Браузер TOR. Анонимизация
+
+Необходимо три узла - входной, промежуточный и выходной (рис. [-@fig:014]).
+
+![Вопрос 2.3.1](image/14.png){#fig:014 width=70%}
+
+IP-адрес не должен быть известен охранному и промежуточному узлам (рис. [-@fig:015]).
+
+![Вопрос 2.3.2](image/15.png){#fig:015 width=70%}
+
+Отправитель генерирует общий секретный ключ со узлами, через которые идет передача, то есть со всеми (рис. [-@fig:016]).
+
+![Вопрос 2.3.3](image/16.png){#fig:016 width=70%}
+
+Для получения пакетов не нужно использовать TOR. (рис. [-@fig:017]).
+
+![Вопрос 2.3.4](image/17.png){#fig:017 width=70%}
+
+## Беспроводные сети Wi-fi
+
+Это определение Wi-Fi (рис. [-@fig:018]).
+
+![Вопрос 2.4.1](image/18.png){#fig:018 width=70%}
+
+Wi-Fi располагается как канальный уровень ниже интернет-уровня интернет-протокола. (рис. [-@fig:019]).
+
+![Вопрос 2.4.2](image/19.png){#fig:019 width=70%}
+
+WEP (Wired Equivalent Privacy) – устаревший и небезопасный метод проверки подлинности.  (рис. [-@fig:020]).
+
+![Вопрос 2.4.3](image/20.png){#fig:020 width=70%}
+
+Нужно аутентифицировать устройства и позже передаются зашифрованные данные (рис. [-@fig:021]).
+
+![Вопрос 2.4.4](image/21.png){#fig:021 width=70%}
+
+WPA2 Personal для личного использования, enterprise - для предпиятий (рис. [-@fig:022]).
+
+![Вопрос 2.4.5](image/22.png){#fig:022 width=70%}
+
+# Выполнение блока 2: Защита ПК/Телефона
+
+## Шифрование диска
+
+Все понятно из картики (рис. [-@fig:023]).
+
+![Вопрос 3.1.1](image1/1.png){#fig:023 width=70%}
+
+Шифрование диска основано на симметричном шифровании (рис. [-@fig:024]).
+
+![Вопрос 3.1.2](image1/2.png){#fig:024 width=70%}
+
+Программы, с помощью которых можно зашифровать жетский диск (рис. [-@fig:025]).
+
+![Вопрос 3.1.3](image1/3.png){#fig:025 width=70%}
+
+## Пароли
+
+Стойкий пароль должен быть со спец. символами и достаточной длины (рис. [-@fig:026]).
+
+![Вопрос 3.2.1](image1/4.png){#fig:026 width=70%}
+
+Все остальные варианты не надежные (рис. [-@fig:027]).
+
+![Вопрос 3.2.2](image1/5.png){#fig:027 width=70%}
+
+Капча нужна для проверки на то, что за экраном "не робот"(рис. [-@fig:028]).
+
+![Вопрос 3.2.3](image1/6.png){#fig:028 width=70%}
+
+Опасно хранить пароли в открытом виде, для этого есть хэши (рис. [-@fig:029]).
+
+![Вопрос 3.2.4](image1/7.png){#fig:029 width=70%}
+
+Все понятно из скриншота (рис. [-@fig:030]).
+
+![Вопрос 3.2.5](image1/8.png){#fig:030 width=70%}
+
+Все приведенные меры верны (рис. [-@fig:031]).
+
+![НВопрос 3.2.6](image1/9.png){#fig:031 width=70%}
+
+## Фишинг
+
+В фишинговых ссылках есть отличия (рис. [-@fig:032]).
+
+![Вопрос 3.3.1](image1/10.png){#fig:032 width=70%}
+
+Да, может, например, если пользователя со знакомым адресом взломали (рис. [-@fig:033]).
+
+![Вопрос 3.3.2](image1/11.png){#fig:033 width=70%}
+
+## Вирусы. Примеры
+
+Ответ идет из определения (рис. [-@fig:034]).
+
+![Вопрос 3.4.1](image1/12.png){#fig:034 width=70%}
+
+Троян маскируется под обычную программу (рис. [-@fig:035]).
+
+![Вопрос 3.4.2](image1/13.png){#fig:035 width=70%}
+
+## Безопасность мессенджеров
+
+При установке первого сообщения отправителем формируется ключ шифрования (рис. [-@fig:036]).
+
+![Вопрос 3.5.1](image1/14.png){#fig:036 width=70%}
+
+Суть сквозного шифрования состоит в том, что сообзения передаются по узлам связи в зашифрованном виде (рис. [-@fig:037]).
+
+![Вопрос 3.5.2](image1/15.png){#fig:037 width=70%}
+
+# Выполнение блока 3: Криптография на практике
+
+## Введение в криптографию
+ 
+Определение ассмиетричного шифрования с двумя ключами (рис. [-@fig:038]).
+
+![Вопрос 4.1.1](image2/1.png){#fig:038 width=70%}
+
+Условия криптографической хэш-функции (рис. [-@fig:040]).
+
+![Вопрос 4.1.2](image2/2.png){#fig:040 width=70%}
+
+Алгоритмы цифровой подписи (рис. [-@fig:041]).
+
+![Вопрос 4.1.3](image2/3.png){#fig:041 width=70%}
+
+Аутентификация источника данных-это свойство, которое гарантирует, что сообщение не было изменено во время передачи (рис. [-@fig:042])
+
+![Вопрос 4.1.4](image2/4.png){#fig:042 width=70%}
+
+Ответ - определение обмена ключами Диффи-Хэллмана (рис. [-@fig:043]).
+
+![Вопрос 4.1.5](image2/5.png){#fig:043 width=70%}
+
+## Цифровая подпись
+
+По определению цифровой подписи протокол ЭЦП относится к протоколам с публичным ключом (рис. [-@fig:044]).
+
+![Вопрос 4.2.1](image2/6.png){#fig:044 width=70%}
+
+Здесь все понятно (рис. [-@fig:045]).
+
+![Вопрос 4.2.2](image2/7.png){#fig:045 width=70%}
+
+Электронная подпись обеспечивает все указанное, кроме конфиденциальности (рис. [-@fig:046]).
+
+![Вопрос 4.2.3](image2/8.png){#fig:046 width=70%}
+
+Для отправки налоговой отчетности в ФНС используется усиленная квалифицированная электронная подпись (рис. [-@fig:047]).
+
+![Вопрос 4.2.4](image2/9.png){#fig:047 width=70%}
+
+Пояснения не требуются (рис. [-@fig:048]).
+
+![Вопрос 4.2.5](image2/10.png){#fig:048 width=70%}
+
+## Электронные платежи
+
+MasterCard, МИР - платежные системы (рис. [-@fig:049]).
+
+![Вопрос 4.3.1](image2/11.png){#fig:049 width=70%}
+
+Пояснения не требуются (рис. [-@fig:050]).
+
+![Вопрос 4.3.2](image2/12.png){#fig:050 width=70%}
+
+При онлайн платежах используется многофакторная аутентификация (рис. [-@fig:051]).
+
+![Вопрос 4.3.3](image2/13.png){#fig:051 width=70%}
+
+## Блокчейн
+
+PoW (доказательство выполнения работы) — это алгоритм достижения консенсуса в блокчейне (рис. [-@fig:052]).
+
+![Вопрос 4.4.1](image2/14.png){#fig:052 width=70%}
+
+Консенсус блокчейна — это процедура, в ходе которой участники сети достигают согласия о текущем состоянии данных в сети. (рис. [-@fig:053]).
+
+![Вопрос 4.4.2](image2/15.png){#fig:053 width=70%}
+
+Ответ - цифровая подпись (рис. [-@fig:054]).
+
+![Вопрос 4.4.3](image2/16.png){#fig:054 width=70%}
+
+# Выводы
+
+Я выполнил задания внешнего курса и получил новые знания о кибербезопасности.
